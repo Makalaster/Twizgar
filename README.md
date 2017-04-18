@@ -1,13 +1,13 @@
 ---
-title: OAuth Twitter Lab
+title: OAuth Lab
 type: lab
-duration: "1:25"
+duration: "1:30"
 creator:
     name: Drew Mahrt
     city: NYC
 ---
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) OAuth Twitter Lab
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) OAuth Lab: Twitter
 
 ## Introduction
 
@@ -35,9 +35,13 @@ Your app should:
 **Bonus:**
 - Allow the user to post tweets from within your app
 
+#### Starter Code
+
+None. Create a new Android Studio project inside your forked & cloned repo.
+
 #### Deliverable
 
-An app that meets the requirement above. The screenshot below is just an example (the UI design is up to you).
+A pull request with an app that meets the requirement above. The screenshot below is just an example (the UI design is up to you).
 
 <p align="center">
   <img src="./screenshots/screen1.png" width="300">
