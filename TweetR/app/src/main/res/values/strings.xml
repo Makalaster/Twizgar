@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TweetR</string>
+    <string name="search_for_user">Search for user</string>
+    <string name="search">search</string>
 </resources>
