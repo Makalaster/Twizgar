@@ -1,5 +1,6 @@
 package com.makalaster.tweetr.recycler;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TweetHolder> {
 
         holder.mBody.setText(currentTweet.getText());
         holder.mTime.setText(currentTweet.getCreated_at());
+        holder.mTime.setTextColor(Color.BLUE);
     }
 
     @Override
