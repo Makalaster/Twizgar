@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         String bearerToken = TwitterAppData.CONSUMER_KEY + ":" + TwitterAppData.CONSUMER_SECRET;
         byte[] byteToken = bearerToken.getBytes();
         String base64Token = Base64.encodeToString(byteToken, Base64.NO_WRAP);
-        
+
         Request request = new Request.Builder()
                 .url("https://api.twitter.com/oauth2/token")
                 .post(body)
