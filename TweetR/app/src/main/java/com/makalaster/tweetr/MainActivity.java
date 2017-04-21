@@ -78,13 +78,12 @@ public class MainActivity extends AppCompatActivity {
         byte[] byteToken = bearerToken.getBytes();
         String base64Token = Base64.encodeToString(byteToken, Base64.DEFAULT);
 
-        System.out.println(base64Token);
+        System.out.println(base64Token.replaceAll("\n", ""));
 
         Request request = new Request.Builder()
                 .url("https://api.twitter.com/oauth2/token")
                 .post(body)
-                //.header("Authorization", "Basic " + base64Token)
-                .header("Authorization", "Basic UVlaRFRzYXB2QWw1cnQ2eWNIOFc1MjZ6STo4bUd2aGRsUVpuekxWWU1nMGE5R1hJS294VkdjSEp6eXlld3BZb2RqWmlWVUlUVUlvSw==")
+                .header("Authorization", "Basic " + base64Token.replaceAll("\n", ""))
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
